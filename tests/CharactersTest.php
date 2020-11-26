@@ -18,8 +18,8 @@ class CharactersTest extends TestCase
     public function providerRevert ()
     {
         return array (
-            array("Тевирп! онвад ен ьсиледив.", "Привет! Давно не виделись."),
-            array("Olleh! ym dneirf.", "Hello! My Friend."),
+            array("Тевирп! Онвад ен ьсиледив.", "Привет! Давно не виделись."),
+            array("Olleh! Ym Dneirf.", "Hello! My Friend."),
         );
     }
 }

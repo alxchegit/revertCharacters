@@ -1,8 +1,15 @@
 <?php
    
 class Characters {
+
+    /**
+     * 
+     * 
+     */
      public function revert(string $str): string 
      {
+        // $re = '/(.*?)(\!|\.|\?)/u';
+        // $str_chunks = explode('');
         $str_explode = explode(' ', $str);
         $result = '';
         foreach ($str_explode as $word) {
@@ -15,6 +22,11 @@ class Characters {
      private function my_strrev(string $str): string
      {
         $r = '';
+        if(mb_strtolower($str) !== $str){
+            $firstUp = true;
+        } else {
+            $firstUp = false;
+        }
         $str_arr = array_reverse($this->str_split_unicode2(mb_strtolower($str)));
         if(preg_match('/\W/u', $str_arr[0])){
             $end = array_shift($str_arr);
@@ -23,6 +35,10 @@ class Characters {
         foreach ($str_arr as $value) {
         $r .= $value;
         }     
+
+        if($firstUp){
+            $r = $this->my_mb_ucfirst($r);
+        }
         return $r;
     }
 
@@ -60,7 +76,8 @@ class Characters {
         return $tmp;
     }
 
-    private function my_mb_ucfirst($str) {
+    private function my_mb_ucfirst(string $str): string 
+    {
         $fc = mb_strtoupper(mb_substr($str, 0, 1));
         return $fc.mb_substr($str, 1);
     }
