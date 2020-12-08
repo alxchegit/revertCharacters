@@ -8,14 +8,12 @@
     "authors": [
         {
             "name": "Alxche",
-            "email": "alxche@mail.ru"
+            "email": "andrewelsepublic@mail.ru"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Services\\": "services",
-            "App\\": "app",
-            "PHPUnit\\": "vendor/phpunit/phpunit/src/"
+            "Services\\": "services"
         }
         
     },
