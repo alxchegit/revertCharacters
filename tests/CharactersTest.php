@@ -10,7 +10,7 @@ class CharactersTest extends TestCase
     */
     public function testRevert($a, $b) 
     {
-        $char = new Characters();
+        $char = new CharactersClass();
         $this->assertEquals($a, $char->revert($b));
     }
 
