@@ -1,8 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-
-include './CharactersClass.php';
+use Services\CharactersClass;
 
 class CharactersTest extends TestCase 
 {

@@ -1,5 +1,24 @@
 {
+    "name": "user/revert-characters",
+    "description": "Reverting characters",
+    "type": "project",
     "require": {
-        "phpunit/phpunit": "9"
-    }
+        "phpunit/phpunit": "9.5.x-dev"
+    },
+    "authors": [
+        {
+            "name": "Alxche",
+            "email": "alxche@mail.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Services\\": "services",
+            "App\\": "app",
+            "PHPUnit\\": "vendor/phpunit/phpunit/src/"
+        }
+        
+    },
+    
+    "minimum-stability": "dev"
 }

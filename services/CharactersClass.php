@@ -1,6 +1,8 @@
 <?php
-   
-class Characters {
+namespace Services;
+
+class CharactersClass 
+{
 
     /**
      * 
